@@ -28,3 +28,83 @@ body {
 .author-block {
   display: inline-block;
 }
+
+.method-step + .method-step {
+  margin-top: 2rem;
+}
+
+.method-caption {
+  font-size: 1.15rem;
+}
+
+.method-figure {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.method-caption + .method-caption {
+  margin-top: 1rem;
+}
+
+/* The architecture diagram is tall and narrow; cap it so it doesn't dominate the page. */
+.arch-figure {
+  max-width: 360px;
+}
+
+.results-figure {
+  margin: 1.5rem auto 0;
+}
+
+.results-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.results-figure figcaption {
+  margin-top: 0.5rem;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+/* The survey plot has large fonts; at full width it would dwarf the returns plot. */
+.results-figure-narrow {
+  max-width: 720px;
+}
+
+/* Example game videos are 352px wide; a little upscaling is fine, more gets blurry. */
+.example-figure {
+  max-width: 480px;
+}
+
+.example-figure video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.example-figure figcaption {
+  color: inherit;
+  font-size: 1rem;
+}
+
+.results-subtitle {
+  margin-top: 3rem;
+}
+
+/* Partner-stage rollout videos (480x564): caption on top at column width, video kept small below. */
+.rollout-figure {
+  max-width: none;
+}
+
+.rollout-figure figcaption {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+.rollout-figure video {
+  max-width: 300px;
+  margin: 0 auto;
+}
